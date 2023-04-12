@@ -31,8 +31,6 @@ const routes = [
 const routerFiles = import.meta.glob('../pages/**/router.json')
 for (const key in routerFiles) {
   await routerFiles[key]().then(res => {
-    console.log(res, 'res')
-    console.log(key, 'key')
     const folderName = key.match(/\.\/pages\/([\w-]+)\/router\.json/)[1]
     routes.push({
       path: res.path,
