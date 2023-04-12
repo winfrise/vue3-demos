@@ -18,6 +18,13 @@ const routes = [
     meta: {
       title: 'Loding抖动问题'
     }
+  },
+  {
+    path: '/overflow-tooltip',
+    component: () => import('@/pages/overflow-tooltip/index.vue'),
+    meta: {
+      title: 'Overflow Tooltip 实现'
+    }
   }
 ]
 

@@ -12,10 +12,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
-console.log('rs')
 const routes = ref([])
 routes.value = router.options.routes.filter(item => item.meta)
-console.log(routes, 'routes')
 </script>
 
 <style lang="scss" scoped>
